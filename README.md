@@ -89,6 +89,12 @@ VANLIFE/
 
 ---
 
+## Credits
+
+Special thanks to [@bobziroll](https://github.com/bobziroll) for the amazing Scrimba React course that inspired this project!
+
+---
+
 ## 📬 Contact
 
 Created by [KAIF-99-1g](https://github.com/KAIF-99-1g) – Contributions and feedback are welcome!
