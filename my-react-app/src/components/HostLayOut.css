@@ -1,0 +1,38 @@
+.host-layout-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100%;
+}
+
+.host-nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.host-nav a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.host-nav a:hover {
+    color: #161616;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.host-nav .active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
+}
+
+.host-content {
+    flex-grow: 1; /* Takes remaining space */
+    padding: 10px 0;
+}

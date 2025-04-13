@@ -1,0 +1,180 @@
+/* Main Container */
+.van-list-container {
+  padding: 0 23px;
+  margin-bottom: 4rem;
+  flex-grow: 1;
+}
+
+/* Filter Section */
+.van-list-filter-container {
+  margin-bottom: 2rem;
+}
+
+.van-list-filter-container h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Filter Buttons Container */
+.van-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* FILTER BUTTONS - UPDATED TO YOUR SPECS */
+.van-list-filter-buttons .van-type {
+  /* Text */
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #4D4D4D;
+  text-transform: capitalize;
+  
+  /* Layout */
+  padding: 6px 26px;
+  border-radius: 5px;
+  
+  /* Visual - DEFAULT STATE (NO BACKGROUND) */
+  background: transparent;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* SELECTED STATES ONLY (COLORED BACKGROUND) */
+.van-list-filter-buttons .van-type.simple.selected {
+  background: #E17654;
+  color: white;
+  border-color: #E17654;
+}
+
+.van-list-filter-buttons .van-type.luxury.selected {
+  background: #161616;
+  color: white;
+  border-color: #161616;
+}
+
+.van-list-filter-buttons .van-type.rugged.selected {
+  background: #115E59;
+  color: white;
+  border-color: #115E59;
+}
+
+/* Clear Filter Link */
+.clear-filters-link {
+  color: #4D4D4D;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.clear-filters-link:hover {
+  color: #161616;
+}
+
+/* Van Grid Layout */
+.van-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 34px;
+  margin: 57px 0;
+  padding-bottom: 3rem;
+}
+
+/* Van Tiles */
+.van-tile {
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.van-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.van-tile a {
+  color: #161616;
+  text-decoration: none;
+  display: block;
+}
+
+.van-tile img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Van Info */
+.van-info {
+  padding: 1rem;
+}
+
+.van-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.van-info p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.van-info p span {
+  font-weight: 400;
+  color: #4D4D4D;
+}
+
+/* Van Type Badges (inside tiles) - Keep original style */
+.van-tile .van-type {
+  background-color: #FFEAD0;
+  color: #4D4D4D;
+  display: inline-block;
+  padding: 6px 26px;
+  border-radius: 5px;
+  margin: 0 1rem 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  border: none;
+}
+
+/* Loading/Empty States */
+.loading-text,
+.no-vans-text {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #4D4D4D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .van-list {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .van-list-container {
+    padding: 0 15px;
+  }
+
+  .van-list-filter-buttons {
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,65 @@
+/* Title styling */
+.host-vans-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #161616;
+}
+
+/* Container for the list */
+.host-vans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Each van link */
+.host-van-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Van item card */
+.host-van-single {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.host-van-single:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Van image */
+.host-van-single img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+/* Van info section */
+.host-van-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.host-van-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #161616;
+}
+
+.host-van-info p {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    color: #4d4d4d;
+}

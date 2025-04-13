@@ -1,0 +1,95 @@
+.host-income {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff7ed;
+    color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.host-income h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.host-income p span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.host-income h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #ff8c38;
+}
+
+.graph {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0 2rem 0;
+    display: block;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.transaction {
+    background-color: #fff3e5;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.transaction p {
+    font-size: 0.95rem;
+    color: #888;
+}
+
+
+/* -------- 📱 Responsive -------- */
+
+@media (max-width: 600px) {
+    .host-income {
+        padding: 1rem;
+    }
+
+    .info-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transaction {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .transaction h3 {
+        font-size: 1.1rem;
+    }
+
+    .transaction p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,32 @@
+/* NotFound.css */
+.not-found-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .not-found-message {
+    font-size: 1.25rem;
+    color: #161616;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF8C38;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .not-found-button:hover {
+    background-color: #E67E36;
+  }

@@ -1,0 +1,66 @@
+/* HostVanInfo.css - Line by Line Layout */
+.host-van-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.info-line {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.info-line:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-content {
+    font-size: 1rem;
+    color: #161616;
+    line-height: 1.6;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.category-badge.simple { background-color: #E17654; }
+.category-badge.rugged { background-color: #115E59; }
+.category-badge.luxury { background-color: #161616; }
+
+/* Description specific styling */
+.description-content {
+    white-space: pre-line;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .info-line {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .info-label {
+        min-width: 120px;
+    }
+}

@@ -1,0 +1,48 @@
+/* HostVanPricing.css - Bold Highlight */
+.host-van-pricing {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.host-van-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2b2d42;
+    margin: 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.host-van-price::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 70%;
+    background-color: #ef233c;
+    border-radius: 0.25rem;
+}
+
+.host-van-price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #8d99ae;
+    margin-left: 0.25rem;
+}
+
+/* Optional: Add a price badge */
+.host-van-pricing::after {
+    content: 'Special Rate';
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
