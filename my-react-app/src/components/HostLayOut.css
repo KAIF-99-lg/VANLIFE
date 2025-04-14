@@ -11,6 +11,9 @@
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 .host-nav a {
@@ -36,3 +39,13 @@
     flex-grow: 1; /* Takes remaining space */
     padding: 10px 0;
 }
+
+
+@media (max-width: 600px) {
+    .host-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  

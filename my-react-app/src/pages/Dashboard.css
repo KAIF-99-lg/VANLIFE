@@ -137,15 +137,21 @@
     .host-dashboard-reviews,
     .host-dashboard-vans .top,
     .host-van-single {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
-
+  
     .host-van-single {
-        gap: 10px;
+      gap: 10px;
     }
-
+  
     .host-van-single a {
-        align-self: flex-end;
+      align-self: flex-end;
     }
-}
+  
+    .host-dashboard-reviews a,
+    .host-dashboard-earnings a {
+      margin-top: 10px;
+    }
+  }
+  
