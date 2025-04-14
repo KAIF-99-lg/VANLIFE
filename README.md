@@ -1,6 +1,6 @@
 # 🚐 VanLife – React App for Van Hosting
 
-**Live Demo:** [vanlife-2025.netlify.app](https://vanlife-2025.netlify.app/login)  
+**Live Demo:** [vanlife-2025.netlify.app](https://vanlife-2025.netlify.app)  
 **GitHub Repository:** [KAIF-99-1g/VANLIFE](https://github.com/KAIF-99-1g/VANLIFE)
 
 VanLife is a fully responsive, dynamic React application designed for van hosts. It allows users to log in securely, manage vans, track income, and handle reviews with a clean and modern UI.
